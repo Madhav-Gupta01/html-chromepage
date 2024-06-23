@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Chrome Page</title>
+</head>
+
+<body>
+    <div class="header">
+
+        <video autoplay muted loop id="video-background">
+            <source src="access.mp4" type="video/mp4">
+        </video>
+
+        <h1>Welcome to Chrome</h1>
+
+    </div>
+    <div class="search-bar">
+        <input type="text" id="search" placeholder="Hack the web...">
+        <button onclick="search()">Hack</button>
+    </div>
+    <div class="popular-sites">
+
+        <ul>
+            <a href="https://www.google.com">Google</a>
+            <a href="https://www.youtube.com">YouTube</a>
+            <a href="https://www.facebook.com">Facebook</a>
+            <a href="https://www.twitter.com">Twitter</a><br /><br />
+            <a href="https://www.instagram.com">Instagram</a>
+            <a href="https://web.telegram.org/">Telegram</a>
+            <a href="https://classroom.google.com/u/0/h">GC</a>
+            <a href="https://web.snapchat.com/">Snapchat</a>
+
+        </ul>
+    </div>
+
+    <script>
+        function search() {
+            var searchTerm = document.getElementById("search").value;
+            window.location.href = "https://www.google.com/search?q=" + searchTerm;
+        }
+    </script>
+</body>
+
+</html>
